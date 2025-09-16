@@ -1,0 +1,49 @@
+public class UsoInterface {
+    public static void main(String[] args) {
+        Series serie; //referência do tipo da interface
+
+        //instância da classe MaisDois
+        serie = new MaisDois(); //polimorfismo 
+
+        for(int i = 0; i < 5; i++){
+            System.out.println(serie.getNext());
+        }
+        System.out.println();
+
+        serie.reset();
+
+        for(int i = 0; i < 5; i++){
+            System.out.println(serie.getNext());
+        }
+        System.out.println();
+
+        serie.setStart(100);
+
+        for(int i = 0; i < 5; i++){
+            System.out.println(serie.getNext());
+        }
+        System.out.println();
+
+        // instância da classe MaisTres
+        serie = new MaisTres(); //polimorfismo
+
+        for(int i = 0; i < 5; i++){
+            System.out.println(serie.getNext());
+        }
+        System.out.println();
+
+        serie.reset();
+
+        for(int i = 0; i < 5; i++){
+            System.out.println(serie.getNext());
+        }
+        System.out.println();
+
+        serie.setStart(100);
+
+        for(int i = 0; i < 5; i++){
+            System.out.println(serie.getNext());
+        }
+        System.out.println();
+    }
+}
